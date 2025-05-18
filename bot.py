@@ -23,7 +23,7 @@ logging.basicConfig(
 )
 
 # 🔐 Замените токен и chat_id на актуальные данные
-TOKEN = "7834653995:AAELsH-lEvlhg_XnmNTEUH0DhJXlFMUDEB8"  # Лучше использовать переменные окружения
+TOKEN = os.getenv("TOKEN")
 ADMIN_CHAT_ID = int(os.getenv("ADMIN_CHAT_ID", "5598142824"))  # ← Замените на свой chat_id
 
 # Главное меню
